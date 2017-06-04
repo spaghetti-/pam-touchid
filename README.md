@@ -41,3 +41,12 @@ Reboot back into recovery to enable SIP again
 csrutil enable
 ```
 
+Screenshot
+----------
+
+
+Here's what shows on the touchbar when you try to `sudo` with the module
+installed
+
+![Touchbar screenshot](tscrot.png)
+
