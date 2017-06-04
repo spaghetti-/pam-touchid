@@ -8,6 +8,11 @@ a frequent command.
 Compilation
 -----------
 
+Find your `uid` and `gid` by running `id` in a standard shell (NOT AS ROOT).
+
+Next, set these variables in line 20 and 21 in `pam_touchid.m`. I may figure out
+a way to automate this later.
+
 `make all`
 
 Caveats
