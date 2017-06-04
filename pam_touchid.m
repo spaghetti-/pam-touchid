@@ -25,7 +25,7 @@ int pam_sm_authenticate(pam_handle_t* pamh, int flags,
   LAContext* ctx = [[LAContext alloc] init];
   const bool can_auth = [ctx 
     canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:nil];
-  if (!can_auth) return false;
+  if (!can_auth) return PAM_AUTH_ERR;
 
   __block TouchIdResult result = RESULT_NONE;
 

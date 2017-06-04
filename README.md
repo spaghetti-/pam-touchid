@@ -1,9 +1,10 @@
-Pluggable Authenticate Module for Touch-ID
-------------------------------------------
+Pluggable Authentication Module using Touch-ID
+----------------------------------------------
 
 This module allows us to authenticate services via touch-id using Apple's
-`LocalAuthentication` API. I am using the module to authenticate `sudo` as it is
-a frequent command.
+`LocalAuthentication` API. I am using the module to authenticate `sudo` as it's
+something we run frequently. The module can be dropped in to authenticate any
+other PAM enabled service as well.
 
 Compilation
 -----------
