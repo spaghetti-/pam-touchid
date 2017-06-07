@@ -9,10 +9,9 @@ other PAM enabled service as well.
 Compilation
 -----------
 
-Find your `uid` and `gid` by running `id` in a standard shell (NOT AS ROOT).
+Compile this module as the user who has touchid active. Otherwise manually edit
+the user id's inside the .m file.
 
-Next, set these variables in line 20 and 21 in `pam_touchid.m`. I may figure out
-a way to automate this later.
 
 `make all`
 

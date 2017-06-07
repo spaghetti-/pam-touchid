@@ -19,8 +19,8 @@ int pam_sm_authenticate(pam_handle_t* pamh, int flags,
 {
   uid_t _uid = geteuid();
   gid_t _gid = getegid();
-  seteuid(501); // alex
-  setegid(20); // staff
+  seteuid(CURRENT_EUID);
+  setegid(CURRENT_EGID);
 
   LAContext* ctx = [[LAContext alloc] init];
   const bool can_auth = [ctx 
