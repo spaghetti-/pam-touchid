@@ -6,6 +6,10 @@ This module allows us to authenticate services via touch-id using Apple's
 something we run frequently. The module can be dropped in to authenticate any
 other PAM enabled service as well.
 
+NOTE: Apple has added its own pam touch-id module to the OS and you should
+use that. Please see: https://news.ycombinator.com/item?id=26302139
+
+
 Compilation
 -----------
 
